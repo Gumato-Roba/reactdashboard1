@@ -1,24 +1,26 @@
 import React from "react";
 import "./header.css";
-import { FaUserCircle, FaRegSun, FaRegBell} from "react-icons/fa";
+import { FaUserCircle, FaRegSun, FaRegBell } from "react-icons/fa";
 import Img from '../../../imgs/profile.png'
 
-export const Header = ({children}) => {
+export const Header = ({ children }) => {
     return (
-        
+
         <div className="icons">
             <div className="image">
-                <img src={Img} alt="profile"/>
+                <a href="/profile">
+                    <img src={Img} alt="profile" />
+                </a>
             </div>
-            
+
             <FaRegSun />
             <FaRegBell />
             {children}
         </div>
-       
+
     );
 
-    
+
 
 
 };
